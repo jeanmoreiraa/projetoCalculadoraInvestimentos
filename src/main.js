@@ -1,8 +1,11 @@
-import { generateReturnsArray } from "./investmentGoals";
+import { generateReturnsArray } from "./src/investmentGoals";
 
-const calculateButton = document.getElementById("calculate - results");
+const from = document.getElementById("investment-form");
+//const calculateButton = document.getElementById(calculate - results);
 
-function renderProgression() {
+function renderProgression(evt) {
+  evt.preventDefault();
+  //const startingAmount = Number(form["startingAmount"].value);
   const startingAmount = Number(
     document.getElementById("starting-amount").value
   );
@@ -19,7 +22,7 @@ function renderProgression() {
     startingAmount,
     timeAmount,
     timeAmountPeriod,
-    additionalContributio,
+    additionalContribution,
     returnRate,
     returnRatePeriod
   );
@@ -27,4 +30,5 @@ function renderProgression() {
   console.log(returnsArray);
 }
 
-calculateButton.addEventListener("click", renderProgression);
+from.addEventListener("submit", renderProgression);
+//calculate - results.addEventListener("click", renderProgression);
