@@ -4,7 +4,7 @@
 
 @layer utilities {
   .error {
-    @apply borde-2;
+    @apply border-2;
     @apply border-red-600;
     @apply rounded-lg;
   }
