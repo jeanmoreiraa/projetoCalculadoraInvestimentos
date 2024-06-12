@@ -173,6 +173,6 @@ for (const formElement of form) {
   }
 }
 
-from.addEventListener("submit", renderProgression);
+//from.addEventListener("submit", renderProgression);
 //calculateButton.addEventListener("click", renderProgression);
 clearFormButton.addEventListener("click", clearForm);
